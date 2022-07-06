@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violino</title>
     <link rel="stylesheet" href="Estilo/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
 
     <header>
 
+        <form action="" id="register">
+
+            <p>Cadasdtre-se</p>
+            <div class="field"><input type="text" placeholder="Digite seu nome ..."></div>
+            <div class="field"><input type="email" placeholder="Digite seu e-mail ..."></div>
+            <div class="field"><input type="date" placeholder="Data de nascimento ..."></div>
+            <div class="field">
+                <label><input type="radio" name="gender" value="M"><span>Masculino</span></label>
+                <label><input type="radio" name="gender" value="F"><span>Feminino</span></label>
+
+                </div>
+
+                <button>Registrar</button>
+        </form>
+
 
         <div class="bg-gradient">
 
-            <div class="hearder-border">
+            <div class="header-border">
             
                     <div id="logo">
                         
@@ -23,10 +40,14 @@
 
                         </div>
 
-                        <nav id="menu">
+                        <nav class="menu">
+
+                            <button type="button" class="open-menu"><ion-icon name="menu-outline"></ion-icon></button>
+
+                            <div class="backdrop"></div>
 
                             <ul>
-
+                                <li class="close-menu"> <button><ion-icon name="close-outline"></ion-icon></li></button>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -42,11 +63,49 @@
     </header>
 
 
-    <section></section>
+    <section class="home1">
+
+
+        <main class="container1">
+
+            <div class="title1">
+                <h1>Home Page</h1>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, exercitationem tenetur maxime ipsam, officiis velit alias explicabo amet beatae eligendi suscipit est natus vero! Beatae quae qui modi delectus sunt?
+            Reiciendis, dolorem dolor tempora, voluptatem a minima temporibus labore nisi ex perspiciatis unde debitis et voluptates vel hic maxime praesentium cumque fugiat? Commodi exercitationem iusto neque, vel magnam dicta quia?
+            Ducimus nostrum quaerat fuga quo adipisci! Cupiditate perspiciatis adipisci accusamus est nam error, earum quia ut ab ex ipsa? Ex voluptas nisi quidem asperiores dolorem repellendus sint excepturi iusto quo.
+            Laudantium laborum, nobis natus libero officiis in, veritatis, dolorem quidem repudiandae tempora nisi? Commodi sunt porro doloremque soluta necessitatibus odio culpa eius. Tempora, adipisci veritatis. Eligendi consectetur est velit dolore.</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem doloremque aspernatur aut totam ad, temporibus at facere, debitis est harum perspiciatis praesentium molestias reprehenderit voluptates, delectus velit? Necessitatibus, temporibus hic.
+            Eius nihil itaque ex, esse, delectus facilis aut architecto illo saepe accusamus laudantium, sequi quibusdam dolorem fuga soluta. Qui suscipit amet nam quia ut neque enim sed dolorem quod totam?
+            Nemo dignissimos officia inventore odio, qui dolor sit quia aliquam eos. Quam ipsam quae atque dolor totam nihil error amet rerum asperiores quis? Tempore explicabo reprehenderit culpa beatae voluptas minus?
+            Quisquam perferendis impedit perspiciatis alias ipsam eveniet ullam cupiditate in aliquam ab, sapiente dolorum maiores asperiores repellendus, quae est aut, consectetur adipisci ea suscipit quod veniam et? Asperiores, laboriosam nemo!</p>
+
+
+        </main>
+    </section>
 
 
 
-    <footer></footer>
+    <footer>
+
+        <div class="container">
+
+
+            <p>Todos os direitos reservados.</p>
+
+            <nav class="menufooter">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>                    
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </footer>
 
     
     
