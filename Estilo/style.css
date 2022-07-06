@@ -201,6 +201,17 @@ header .header-border {
 
 }
 
+header .header-border .busca {
+     margin: 20px;
+}
+
+header .header-border .busca input {
+    padding: 10px;
+    border-radius: 7px;
+    padding-right: 30px;
+    border: none;
+}
+
 header #logo {
     width: 200px;
     color: white;
@@ -241,8 +252,12 @@ header button a {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    padding: 0;
+    padding: 0;    
 
+}
+
+.menu ul .icone {
+    font-size: 40px;
 }
 
 .menu li {
