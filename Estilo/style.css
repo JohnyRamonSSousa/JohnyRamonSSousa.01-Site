@@ -58,7 +58,7 @@
 
 .content-center1 {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
     padding: 20px;
     background-color: #fff;
@@ -71,10 +71,12 @@
 
 .content-center1 img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .content-center1 form{
-    margin: 20px;
+    margin: 40px;
+    
 }
 
 .content-center1 input,
@@ -97,6 +99,7 @@
     background-color: #d07335;
     color: #fff;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .content-center1 input:focus {
@@ -120,13 +123,14 @@ header a {
 }
 
 
- h1 {
+ h2 {
+    color: #333;
     font-size: 2.5em;
     text-align: center;
     margin: 50px auto;
 }
 
-footer {
+.foooter {
     font-size: .8em;
     text-align: center;
 }
@@ -177,7 +181,7 @@ body {
 }
 
 header {
-    min-height: 600px;
+    min-height: 500px;
     background-image: url('../img/violino23.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -345,63 +349,107 @@ header button a {
     padding-bottom: 1rem;
 }
 
-.home1 p {
-    text-align: justify;
-    
-}
-.home1 .container1 p {
-    font-size: 23px;
+.container2{
+    max-width: 1170px;
+    margin: auto;
 }
 
-footer {
-    background-color: #f5f5f5;
-    color: #6c757d;
-    font-size: .8em;
+.row{
     display: flex;
-    justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
-footer p {
-    line-height: 35px; /* altura da linha */
-
-}
-
-footer .container{
-    display: flex;
-    
-}
-
-footer .menufooter a {
-    color: #6c757d;
-}
-
-
-
-
-.menufooter {
-    flex: 1;    
-}
-
-.menufooter ul {
-    display: flex;
-    justify-content: flex-end;
+ul {
     list-style: none;
-    padding: 0;
-
 }
 
-.menufooter li {
-    min-width: 100px;
-    line-height: 28px;
+.footer1{
+    background-color: #24262b;
+    padding: 70px 0;
 }
 
-.menufooter a {
-    color: white;
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 20px;   
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
 
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+
+}
+.footer-col .socia-links a{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255,255,255,0.2);
+    margin:  0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .socia-links ion-icon{
+    font-size: 40px; 
+    
+}
+
+.footer-col .socia-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+
+}
+
+
+@media(max-width:750px){
+    .footer-col {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+@media(max-width:550px){
+    .footer-col {
+        width: 100%;
+        
+    }
 }
 
 .menu .open-menu{
