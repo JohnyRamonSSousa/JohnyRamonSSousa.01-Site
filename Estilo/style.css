@@ -349,6 +349,10 @@ header button a {
     padding-bottom: 1rem;
 }
 
+.container1 p {
+    font-size: 25px;
+}
+
 .container2{
     max-width: 1170px;
     margin: auto;
@@ -465,7 +469,7 @@ ul {
     display: none;
 }
 
-@media(max-width: 550px){
+@media(max-width: 750px){
 
     #register {
         display: none;
