@@ -455,6 +455,17 @@ ul {
 }
 
 
+.imagesviolion{
+    background-image: url(/img/violino12detalhada.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+
 @media(max-width:750px){
     .footer-col {
         width: 50%;
