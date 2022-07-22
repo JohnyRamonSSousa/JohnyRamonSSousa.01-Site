@@ -1,14 +1,32 @@
 
+:root{
+    --cor01: #fff;
+    --cor02:#00000055;
+    --cor03:#000000;
+    --cor04-color:rgb(100, 97, 97);
+    --cor04-color-menu:rgb(255, 254, 254);
+    --cor05:#d07335;
+    --cor06-focus:#d07335;
+    --cor07-hover:#b55b28;
+    --cor08-active:#c14e0e;
+    --cor09-linha:rgba(255, 255, 255,.25);
+    --cor10-footer:#24262b;
+    --cor11-footer02:#e91e63;
+    --cor11-footer03:rgba(255,255,255,0.2);
+}
+
+
+
 .container-slide{
     display: flex;
     justify-content: space-between;
     width: 80vw;
     height: 70vh;
-    background-color: black;
+    background-color: var(--cor03);
     margin: 20vh auto;
     border-radius: 10px;
-    box-shadow: 0 20px 30px black;
-    border: 5px solid black;
+    box-shadow: 0 20px 30px var(--cor03);
+    border: 5px solid var(--cor03);
 }
 
 .container-items {
@@ -41,13 +59,13 @@
     justify-content: center;
     align-items: center;
     width: 50px;
-    color: #00000000;
+    color: var(--cor03);
     user-select: none;
     z-index: 1;
 }
 .action-button{
-    color: white;
-    background-color: #00000055;
+    color: var(--cor01);
+    background-color: var(--cor03);
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
@@ -61,7 +79,7 @@
     max-width: 500px;
     margin: auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--cor01);
     border-radius: 10px;
 }
 
@@ -89,42 +107,42 @@
 }
 
 .content-center1 input {
-    border-bottom-color: #ccc;
+    border-bottom-color: var(--cor04);
     border-bottom-style: solid;
     border-bottom-width: 2px;
     margin-bottom: 10px;
 }
 
 .content-center1 button {
-    background-color: #d07335;
-    color: #fff;
+    background-color: var(--cor05);
+    color: var(--cor01);
     border-radius: 5px;
     margin-top: 20px;
 }
 
 .content-center1 input:focus {
-    border-bottom-color: #d07335;
+    border-bottom-color: var(--cor06-focus);
 }
 
 .content-center1 button:hover {
-    background-color: #b55b28;
+    background-color: var(--cor07-hover);
     cursor: pointer;
 }
 
 .content-center1 button:active {
-    background-color: #c14e0e;
+    background-color: var(--cor08-active) ;
     cursor: pointer;
     
 }
 
 header a {
-    color: #666;
+    color: var(--cor04-color);
     text-decoration: none;
 }
 
 
  h2 {
-    color: #333;
+    color: var(--cor04-color);
     font-size: 2.5em;
     text-align: center;
     margin: 50px auto;
@@ -143,28 +161,10 @@ header a {
     width: 100%;
     text-align: center;
     max-width: 500px;
-    background-color: #fff;
+    background-color: var(--cor01);
     margin: auto;
     padding: 20px;
 
-}
-.content-tabuada td {
-    padding: .75rem;
-    border-top: 1px solid #dee2e6;
-}
-
-.content-tabuada table {
-    width: 100%;
-    border-collapse: collapse ;
-}
-
-.content-tabuada tbody tr:nth-child(odd) { /* onde selecionar o coluna entre () odd numeros pares e even é numeros ímpares */
-    background-color: #b55b28;
-}
-
-.content-tabuada tbody tr:hover {
-    background-color: #666;
-    cursor: pointer;
 }
 
 #valorA {
@@ -215,19 +215,19 @@ header .bg-gradient {
 
 header .header-border {
     display: flex;
-    border-bottom:  rgba(255, 255, 255,.25) 1px solid;
+    border-bottom:  var(--cor09-linha) 1px solid;
 
 }
 
 
 header #logo {
     width: 200px;
-    color: white;
+    color: var(--cor04-color-menu);
     line-height: 60px;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    text-shadow: #000 1px 1px 8px;
+    text-shadow: var(--cor03) 1px 1px 8px;
 }
 
 
@@ -244,7 +244,7 @@ header .button:hover {
 
 header button a {
     text-decoration: none;
-    color: #fff;
+    color: var(--cor04-color);
     font-weight: bold;
     list-style: none;
     font-size: 20px;
@@ -274,7 +274,7 @@ header button a {
 }
 
 .menu a {
-    color: white;
+    color: var(--cor04-color);
     text-decoration: none;
     font-weight: bold;
     padding: 20px;   
@@ -282,7 +282,7 @@ header button a {
 }
 
 #register {
-    background-color: #fff;
+    background-color: var(--cor01);
     width: 100%;
     height: 400px;
     max-width: 350px ;
@@ -293,7 +293,7 @@ header button a {
     border-top-left-radius: 0.30rem;
     border-top-right-radius: 0.30rem;
     padding: 20px;
-    color: #333;
+    color: var(--cor04-color);
 }
 
 #register p {
@@ -311,7 +311,7 @@ header button a {
     width: 100%;
     padding: .75rem 1rem;
     border-radius: 4px;
-    border: #ccc 1px solid;
+    border: var(--cor04-color) 1px solid;
 }
 
 #register input[type=radio] {
@@ -321,8 +321,8 @@ header button a {
 #register button {
     width: 100%;
     border: none;
-    background-color: #e67e22;
-    color: #fff;
+    background-color: var(--cor05);
+    color: var(--cor04-color);
     padding: .75rem;
     font-size: 1.2em;
     border-radius: 10px;
@@ -333,11 +333,30 @@ header button a {
     cursor: pointer;
     width: 100%;
     border: none;
-    background-color: #f5a259;
-    color: rgb(26, 23, 23);
+    background-color: var(--cor07-hover);
+    color: var(--cor04-color);
     padding: .75rem;
     font-size: 1.2em;
     border-radius: 10px;
+}
+
+
+.contato{
+    background-color: var(--cor01);
+    width: 100%;
+    height: 44.5vh;
+}
+
+.form-logincontato{
+    padding: 30px;
+
+}
+
+.textnome  #nome{
+    padding-right: 600px;    
+    margin: 60px;
+    border: 200px;
+    padding: 30px;
 }
 
 .container1 {
@@ -345,11 +364,12 @@ header button a {
     margin: auto;
     width: 100%;
     padding-left: 15px;
+    color: var(--cor04-color);
 }
 
 .title1 h1 {
     font-size: 3em;
-    border-bottom: #ccc 1px solid;
+    border-bottom: var(--cor04-color) 1px solid;
     padding-bottom: 1rem;
 }
 
@@ -422,7 +442,7 @@ tbody{
 }
 
 .footer1{
-    background-color: #24262b;
+    background-color: var(--cor10-footer) ;
     padding: 70px 0;
 }
 
@@ -433,7 +453,7 @@ tbody{
 
 .footer-col h4{
     font-size: 20px;
-    color: #fff;
+    color: var(--cor04-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -445,7 +465,7 @@ tbody{
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: var(--cor11-footer02);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -458,16 +478,16 @@ tbody{
 .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--cor04-color);
     text-decoration: none;
     font-weight: 300;
-    color: #bbbb;
+    color: var(--cor04-color);
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover{
-    color: #fff;
+    color: var(--cor04-color);
     padding-left: 8px;
 
 }
@@ -475,12 +495,12 @@ tbody{
     display: inline-block;
     height: 60px;
     width: 60px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: var(--cor11-footer03);
     margin:  0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #fff;
+    color: var(--cor04-color);
     transition: all 0.5s ease;
 }
 
@@ -490,12 +510,16 @@ tbody{
 }
 
 .footer-col .socia-links a:hover{
-    color: #24262b;
-    background-color: #fff;
+    color: var(--cor04-color);
+    background-color: var(--cor01);
 
 }
 
-
+.contalogin{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .imagesviolion{
     background-image: url(/img/violino12detalhada.png);
@@ -505,6 +529,22 @@ tbody{
     background-position: center;
     height: 600px;
     width: 100%;
+}
+
+@media(max-width:850px){
+    .imagesviolion{
+        display: none;
+    }
+    .imagesviolionpartes{
+        background-image: url(/img/violino12detalhada.responsivo.png);
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        width: 100%;
+
+    }
 }
 
 
@@ -544,7 +584,7 @@ tbody{
     .menu .close-menu{
         display: block;
         text-align: right;
-        background-color: #eee;
+        background-color: var(--cor01);
     }
 
     .menu .close-menu button {
@@ -566,7 +606,7 @@ tbody{
 
     .menu.open .backdrop {
        /* opacity: 0; */
-        background-color: #000;
+        background-color: var(--cor03);
         transition: opacity .15s linear;
         position: fixed;
         width:  100%;
@@ -593,7 +633,7 @@ tbody{
         right: -80vw;
         width: 80vw;
         height: 100vh;
-        background-color: #fff;
+        background-color: var(--cor01);
         z-index: 1;
         margin: 0;
         transition: right .2s linear;
@@ -605,11 +645,11 @@ tbody{
     }
 
     .menu.open a {
-        color: #000;
+        color: var(--cor04-color);
         padding: 20px;
         display: block;
         font-weight: 100;
-        border-bottom: #ccc 1px solid;
+        border-bottom: var(--cor04-color) 1px solid;
     }
 
     
